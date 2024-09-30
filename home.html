@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>POC</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<body>
+    <header>
+        <div class="logo-sec">
+            <div class="logo"> <img src="./img/MCFE-d6ec69dd.png" alt="logo" /></div>
+            <h2 class="logotxt">McAfee<sup>®</sup> Total
+                Protection</h2>
+        </div>
+        <div class="navMenu">
+            <div class="menus leftnav w-50s">
+                <ul>
+                    <li>Home</li>
+                    <li class="active">McAfee Security</li>
+                    <li>Identity</li>
+                    <li>Account</li>
+                </ul>
+            </div>
+            <div class="righttop">
+                <ul class="top-menu">
+                    <li><span><img src="./img/bell.png" /></span></li>
+                    <li><span><img src="./img/smartlight.png" /></span></li>
+                    <li><span><img src="./img/settings.png" /></span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contentWrapper">
+            <div class="sidewrapper">
+                <div class="scan-sec">
+                    <h4>Scanning</h4>
+                    <div class="loadicon">
+                        <div class="lds-roller">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <p>Scanning commonly infected areas and startup files...</p>
+                </div>
+            </div>
+            <div class="mainconwrap">
+                <div class="content-scan">
+                    <div class="w-100 acc-body">
+                        <div class="head-sec">Results Summary</div>
+
+                    </div>
+                    <div class="w-100 acc-body">
+                        <div class="cssProgress">
+                            <div class="progress-bar-container head-sec">
+                                <div class="cssProgress-bar" data-total="400" style="width: 0%;">
+                                    <div class="proger-val">
+                                        <div class="proTxt">Total items scanned:</div>
+                                        <span class="cssProgress-label"> 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="head-sec">Total items scanned: 25888</div> -->
+                    </div>
+                    <div class="w-100 acc-body">
+                        <div class="head-sec"> Total security risks detected: <span class="deteCount">0</span></div>
+                        <div class="accISopen">
+                            <div class="securityCont">
+                                <div>
+                                    <h4>1.virus</h4>
+                                    <p>win32/Hoax.Renos.HX</p>
+                                    <p>Risk level: HIGH</p>
+                                </div>
+                                <div>
+                                    <h4>2.virus</h4>
+                                    <p>Trojan IRC/Backdoor.sd</p>
+                                    <p>Risk level: HIGH</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 acc-body">
+                        <div class="head-sec">[+] Total security risks resolved : 0</div>
+                    </div>
+                    <div class="w-100 acc-body">
+                        <div class="head-sec">Total security risks requiring attention : 0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modalPopup" id="virusescdet">
+        <div class="modalDialog detect-dialog">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <h1>Threat Detected</h1>
+                    <p>Trojan IRC/Backdoor.sd.FRV</p>
+                </div>
+                <div class="modalBody">
+                    <div class="instrContent">
+                        <ul class="detMenu">
+                            <li>
+                                <div class="lmenu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div>high Risk</div>
+                            </li>
+                            <li>
+                                <icon> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 576 512" height="200px" width="200px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+                                        </path>
+                                    </svg></icon>
+
+                                <div>
+                                    <h4>Origin</h4>
+                                    <p>Not available</p>
+                                </div>
+                            </li>
+                            <li>
+                                <icon> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 24 24" height="200px" width="200px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path>
+                                    </svg></icon>
+                                <div>
+                                    <h4>Activity</h4>
+                                    <p>Threat actions performed: 1</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modalPopup " id="finalProceemodal">
+
+        <div class="modalDialog centerDialog">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <header>
+                        <div class="logo-sec">
+                            <div class="logo"> <img src="./img/MCFE-d6ec69dd.png" alt="logo" /></div>
+                            <h2 class="logotxt">McAfee<sup>®</sup> Total
+                                Protection</h2>
+                        </div>
+                    </header>
+                </div>
+                <div class="flat-sec">
+                    <h1> Your device is infected with 5 virues!</h1>
+                </div>
+                <div class="modalBody">
+                    <div class="content-detat">
+                        <div>
+                            <h4>Immediate Action Required!</h4>
+                        </div>
+                        <div>
+                            <h5>Your McAfee subscription has expired!</h5>
+                        </div>
+                        <div>
+                            <h5>Renew now to keep your device protected.</h5>
+                        </div>
+                        <div>
+                            <p>Virues found on this device most likely track internet activity to collect banking
+                                details
+                                and login credential. Unprotected devices are 93% more vulnerable to suffer from malware
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btsecfooter"><button class="proceBtn">Proceed...</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

